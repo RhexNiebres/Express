@@ -17,5 +17,8 @@
     "url": "https://github.com/RhexNiebres/Express/issues"
   },
   "homepage": "https://github.com/RhexNiebres/Express#readme",
-  "description": ""
+  "description": "",
+  "dependencies": {
+    "express": "^4.21.2"
+  }
 }
