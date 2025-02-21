@@ -1,6 +1,6 @@
-const { Router } = require("express")
+const { Router } = require("express");
 
-const { getauthorById } = require("../controllers/authorController")//import controller
+const { getauthorById } = require("../controllers/authorController"); //import controller
 const authorRouter = Router();
 
 authorRouter.get("/", (req, res) => res.send("ALL authors"));
