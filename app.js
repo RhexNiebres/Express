@@ -17,6 +17,9 @@ app.use("/books", bookRouter);
 //   res.render("index", { message: "EJS rocks!" });
 // });
 
+const assetsPath = path.join(__dirname, "public");
+app.use(express.static(assetsPath));
+
 
 const links = [
   { href: "/", text: "Home" },
@@ -28,6 +31,7 @@ const users = ["Rose", "Cake", "Biff"];
 app.get("/", (req, res) => {
   res.render("index", { links: links, users: users });
 });
+
 
 const PORT = 3000;
 app.listen(PORT, () => {
